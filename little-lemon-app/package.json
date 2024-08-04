@@ -1,7 +1,7 @@
 {
   "name": "little-lemon-app",
   "version": "0.1.0",
-  "homepage": "littlelemonrestaurant-mdogan89s-projects.vercel.app",
+  "homepage": "https://littlelemonrestaurant-mdogan89s-projects.vercel.app",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

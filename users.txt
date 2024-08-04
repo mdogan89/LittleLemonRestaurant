@@ -1,0 +1,6 @@
+super user: admin
+password: admin
+
+testuser: testuser
+password: test@789!
+token: d454ee68880ef61e4272cece585ee540220ff1b8

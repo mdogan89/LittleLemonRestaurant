@@ -14,5 +14,10 @@
             "src": "/(.*)",
             "dest": "littlelemon/wsgi.py"
         }
-    ]
+    ],
+    "functions": {
+        "little-lemon-app/**": {
+            "excludeFiles": "{node_modules}/**"
+        }
+    }
 }

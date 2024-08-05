@@ -24,9 +24,13 @@ export default function ReservationsPage() {
     const submitForm = (formData) => {
         axios.post('http://localhost:8000/booking/table/', formData).then(response => {
             console.log(response.status);
-        })
-        setIsSubmitted(true)
-        setConfirmedBookings({ formData })
+            const form = response.data;
+            setConfirmedBookings(form);
+            setIsSubmitted(true);
+        }).catch(error => {
+            console.log(error);
+        });
+
     }
 
 

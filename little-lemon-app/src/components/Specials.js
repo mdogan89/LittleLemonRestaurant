@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from './Card'
 import svg from "../img/bruchetta.svg"
+
+import axios from 'axios';
+import { useEffect } from 'react';
 
 const specials = [
   {
@@ -10,7 +13,7 @@ const specials = [
     getImageSrc: () => require("../img/greek salad.jpg")
   },
   {
-    title: "Bruchetta",
+    title: "Bruschetta",
     price: "$ 5.99",
     description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
     getImageSrc: () => svg
@@ -23,7 +26,27 @@ const specials = [
   }
 ]
 
+
+
+
 export default function Specials() {
+
+  const [menuItems, setMenuItems] = useState([])
+
+
+  useEffect(() => {
+    // invalid url will trigger an 404 error
+    axios.get(`http://localhost:8000/restaurant/menu/`).then((response) => {
+      const menuItems = response.data
+      setMenuItems(menuItems)
+      console.log(menuItems);
+    }).catch(error => {
+      console.log(error);
+    });
+  }, []);
+
+
+
   return (
     <section id='specials'>
       <article>
@@ -31,13 +54,13 @@ export default function Specials() {
         <button id="menu-button">Online Menu</button>
       </article>
       <article id="cards">
-        {specials.map((special) => (
+        {menuItems.map((special) => (
           <Card
             key={special.title}
             title={special.title}
             price={special.price}
             description={special.description}
-            imageSrc={special.getImageSrc()}
+            imageSrc={special.image}
           />
         ))}
       </article>

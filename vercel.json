@@ -16,7 +16,7 @@
         }
     ],
     "functions": {
-        "little-lemon-app/**": {
+        "api/**": {
             "excludeFiles": "{node_modules}/**"
         }
     }

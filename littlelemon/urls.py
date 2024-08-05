@@ -23,6 +23,10 @@ from rest_framework import routers
 
 from django.views.generic import TemplateView
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 router = routers.DefaultRouter()
 # router.register(r"tables", BookingViewSet)
 router.register(r"table", ReservationTestViewSet)
@@ -36,4 +40,4 @@ urlpatterns = [
     path("api-token-auth/", obtain_auth_token),
     path("booking/", include(router.urls)),
     path("", TemplateView.as_view(template_name="index.html")),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

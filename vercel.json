@@ -1,18 +1,27 @@
 {
+    "version": 2,
     "builds": [
         {
             "src": "littlelemon/wsgi.py",
             "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "15mb",
-                "runtime": "python3.12"
+                "runtime": "python3.9"
             }
+        },
+        {
+            "src": "build_files.sh",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
+            "src": "/littlelemon/(.*)",
+            "dest": "/staticfiles/$1"
+        },
+        {
             "src": "/(.*)",
-            "dest": "littlelemon/wsgi.py"
+            "dest": "vercel_django/wsgi.py"
         }
     ]
 }

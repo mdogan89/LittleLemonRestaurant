@@ -163,3 +163,12 @@ CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
 
 CORS_ALLOW_ALL_ORIGINS: True
 ALLOWED_HOSTS = ["*"]
+
+
+if "VERCEL" in os.environ:
+    # Disable collectstatic during Vercel deployment
+    VERCEL = True
+    COMPRESS_ENABLED = True  # Use Django Compressor
+    COMPRESS_OFFLINE = True  # Run collectstatic during development
+else:
+    VERCEL = False

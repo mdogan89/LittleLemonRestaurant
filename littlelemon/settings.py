@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-STATIC_ROOT = "static_folder/"
+STATIC_ROOT = "staticfiles"
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "little-lemon-app/build/static"),
@@ -165,10 +165,10 @@ CORS_ALLOW_ALL_ORIGINS: True
 ALLOWED_HOSTS = ["*"]
 
 
-if "VERCEL" in os.environ:
-    # Disable collectstatic during Vercel deployment
-    VERCEL = True
-    COMPRESS_ENABLED = True  # Use Django Compressor
-    COMPRESS_OFFLINE = True  # Run collectstatic during development
-else:
-    VERCEL = False
+# if "VERCEL" in os.environ:
+#     # Disable collectstatic during Vercel deployment
+#     VERCEL = True
+#     COMPRESS_ENABLED = True  # Use Django Compressor
+#     COMPRESS_OFFLINE = True  # Run collectstatic during development
+# else:
+#     VERCEL = False

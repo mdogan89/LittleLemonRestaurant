@@ -27,8 +27,6 @@ SECRET_KEY = "django-insecure-m1h+xa@t5-nxlqemzggs+vz8ccjh+y7vql=w453&v3x#$ttfj(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", "*"]
-
 
 # Application definition
 
@@ -161,8 +159,13 @@ REST_FRAMEWORK = {
 DJOSER = {"USER_ID_FIELD": "username"}
 
 
-CORS_ALLOW_ALL_ORIGINS: True
+CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS = ["*"]
+
+
+from corsheaders.defaults import default_headers
+
+CORS_ALLOW_HEADERS = default_headers + ("Access-Control-Allow-Origin",)
 
 
 # if "VERCEL" in os.environ:

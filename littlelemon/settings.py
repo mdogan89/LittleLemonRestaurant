@@ -55,6 +55,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "littlelemon.urls"
@@ -131,7 +132,7 @@ STATIC_URL = "static/"
 STATIC_ROOT = "staticfiles"
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "little-lemon-app/build/"),
+    os.path.join(BASE_DIR, "little-lemon-app/build/static"),
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")

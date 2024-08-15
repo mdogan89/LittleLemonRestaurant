@@ -26,6 +26,5 @@
             "src": "/(.*)",
             "dest": "littlelemon/wsgi.py"
         }
-    ],
-    "outputDirectory": "build"
+    ]
 }

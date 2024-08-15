@@ -167,6 +167,9 @@ from corsheaders.defaults import default_headers
 
 CORS_ALLOW_HEADERS = default_headers + ("Access-Control-Allow-Origin",)
 
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_METHODS = ["DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT"]
 
 # if "VERCEL" in os.environ:
 #     # Disable collectstatic during Vercel deployment

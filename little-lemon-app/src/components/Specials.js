@@ -16,7 +16,12 @@ export default function Specials() {
 
   useEffect(() => {
     // invalid url will trigger an 404 error
-    axios.get(`http://littlelemonrestaurant-mdogan89s-projects.vercel.app/restaurant/menu/`).then((response) => {
+    axios.get(`http://littlelemonrestaurant-mdogan89s-projects.vercel.app/restaurant/menu/`, {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      }
+    }).then((response) => {
       const menuItems = response.data
       setMenuItems(menuItems)
       console.log(menuItems);

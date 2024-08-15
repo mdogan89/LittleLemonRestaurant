@@ -131,7 +131,7 @@ STATIC_URL = "static/"
 STATIC_ROOT = "staticfiles"
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "little-lemon-app/build/static"),
+    os.path.join(BASE_DIR, "little-lemon-app/build/"),
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")

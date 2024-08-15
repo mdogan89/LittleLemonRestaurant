@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a6ff2921.css",
+    "main.js": "/static/js/main.0b7067ea.js",
+    "static/js/787.c0b67421.chunk.js": "/static/js/787.c0b67421.chunk.js",
+    "static/media/restauranfood.jpg": "/static/media/restauranfood.c79939f2b879276c5e03.jpg",
+    "static/media/Mario and Adrian b.jpg": "/static/media/Mario and Adrian b.a038f513ecd7b37a95d6.jpg",
+    "static/media/restaurant chef B.jpg": "/static/media/restaurant chef B.6e25b930cbc467ffb859.jpg",
+    "static/media/restaurant.jpg": "/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/Asset 18@4x.png": "/static/media/Asset 18@4x.215df87837073a73cb27.png",
+    "static/media/Logo.svg": "/static/media/Logo.f72c913c48c5334f78f2c336ec36f22b.svg",
+    "index.html": "/index.html",
+    "static/media/moped.svg": "/static/media/moped.113f59c0dc390191231da67516eb46e2.svg",
+    "static/media/basket .svg": "/static/media/basket .096e0ee1a59ac26349dcd0f4f0c56010.svg",
+    "static/media/hamburger.svg": "/static/media/hamburger.085bb085bb254661d460c5911a08f333.svg",
+    "static/media/star-solid.svg": "/static/media/star-solid.dd8a7748f3ee94f9cbc652c3241ef424.svg",
+    "main.a6ff2921.css.map": "/static/css/main.a6ff2921.css.map",
+    "main.0b7067ea.js.map": "/static/js/main.0b7067ea.js.map",
+    "787.c0b67421.chunk.js.map": "/static/js/787.c0b67421.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6ff2921.css",
+    "static/js/main.0b7067ea.js"
+  ]
+}

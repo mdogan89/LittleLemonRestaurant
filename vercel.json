@@ -27,5 +27,5 @@
             "dest": "littlelemon/wsgi.py"
         }
     ],
-    "outputDirectory": "little-lemon-app/build"
+    "outputDirectory": "build"
 }

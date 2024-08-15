@@ -160,16 +160,26 @@ DJOSER = {"USER_ID_FIELD": "username"}
 
 
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 
-from corsheaders.defaults import default_headers
+# from corsheaders.defaults import default_headers
 
-CORS_ALLOW_HEADERS = default_headers + ("Access-Control-Allow-Origin",)
+# CORS_ALLOW_HEADERS = [
+#     "accept",
+#     "accept-encoding",
+#     "authorization",
+#     "content-type",
+#     "origin",
+#     "dnt",
+#     "user-agent",
+#     "x-csrftoken",
+#     "x-requested-with",
+# ]
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOW_METHODS = ["DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT"]
+# CORS_ALLOW_METHODS = ["DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT"]
 
 # if "VERCEL" in os.environ:
 #     # Disable collectstatic during Vercel deployment

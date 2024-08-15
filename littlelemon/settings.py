@@ -160,7 +160,7 @@ DJOSER = {"USER_ID_FIELD": "username"}
 
 
 CORS_ORIGIN_ALLOW_ALL = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # from corsheaders.defaults import default_headers

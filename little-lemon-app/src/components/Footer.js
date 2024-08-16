@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../img/Asset 18@4x.png"
+import logo from "../img/footer_logo.png"
 import { Link } from 'react-router-dom'
 
 const links = [

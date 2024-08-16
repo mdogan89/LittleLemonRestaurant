@@ -1,6 +1,6 @@
 import React from 'react'
-import mario from "../img/restaurant chef B.jpg"
-import marioAdrian from "../img/Mario and Adrian b.jpg"
+import mario from "../img/restaurant_chef_B.jpg"
+import marioAdrian from "../img/Mario_and_Adrian.jpg"
 
 export default function About() {
   return (

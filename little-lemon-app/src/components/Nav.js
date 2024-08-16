@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../img/Logo.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import hamburger from "../img/hamburger.svg"
-import basket from "../img/basket .svg"
+import basket from "../img/basket.svg"
 
 const links = [
   {

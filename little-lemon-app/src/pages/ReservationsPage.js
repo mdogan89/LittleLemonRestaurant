@@ -22,9 +22,6 @@ export default function ReservationsPage() {
     const [confirmedBookings, setConfirmedBookings] = useState('')
 
     const SubmitForm = (formData) => {
-        useEffect(() => {
-
-        })
         axios.post('https://littlelemonrestaurant-mdogan89s-projects.vercel.app/booking/table/', formData).then(response => {
             console.log(response.status);
             const form = response.data;
@@ -33,7 +30,6 @@ export default function ReservationsPage() {
         }).catch(error => {
             console.log(error);
         });
-
     }
 
 

@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from .models import Score
-from .serializers import ScoreSerializer
+from .models import HighScore
+from .serializers import HighScoreSerializer
 from rest_framework.generics import ListCreateAPIView
 
 
 # Create your views here.
 
 
-class ScoresView(ListCreateAPIView):
-    queryset = Score.objects.all()
-    serializer_class = ScoreSerializer
+class HighScoresView(ListCreateAPIView):
+    queryset = HighScore.objects.all()
+    serializer_class = HighScoreSerializer
